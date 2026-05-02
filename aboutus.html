@@ -1,1 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YatraNova | About us</title>
+    <link rel="icon" href="img/logo.png" />
+    <style>
+      :root {
+        --primary-green: #2d5a27;
+        --accent-sage: #8fbc8f;
+        --earth-light: #f9fbf9;
+        --text-main: #2c3e50;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--earth-light);
+        color: var(--text-main);
+        margin: 0;
+        padding: 50px 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .header h1 {
+        color: var(--primary-green);
+        font-size: 3rem;
+      }
+
+      .team-grid {
+        max-width: 1100px; /* Increased grid width */
+        margin: auto;
+      }
+
+      .member-card {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 40px;
+        border-radius: 24px;
+        margin-bottom: 30px;
+        border: 2px solid transparent;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      }
+
+      .member-card:hover {
+        transform: scale(1.02);
+        border-color: var(--accent-sage);
+        box-shadow: 0 20px 30px rgba(45, 90, 39, 0.15);
+      }
+
+      .info {
+        flex: 2;
+        padding-right: 40px;
+      }
+
+      .photo-box {
+        flex: 0 0 180px; /* Fixed size */
+        height: 180px;
+        background: #eee;
+        border-radius: 20px;
+        overflow: hidden; /* This keeps your photo inside the box */
+      }
+
+      .photo-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This prevents the image from stretching */
+      }
+
+      .role {
+        background: var(--accent-sage);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      /* Summary Section */
+      .project-summary {
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 50px;
+        background: var(--primary-green);
+        color: white;
+        border-radius: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1>Our Expedition Crew</h1>
+      </div>
+
+      <div class="team-grid">
+        <div class="member-card">
+          <div class="info">
+            <span class="role">Project Leader</span>
+            <h3>Aadesh Bhandari</h3>
+            <p>
+              Leads our vision for eco-tourism, ensuring the project aligns with
+              sustainable travel goals.
+            </p>
+          </div>
+          <div class="photo-box">
+            <img
+              src="https://i.pinimg.com/736x/8e/a0/0c/8ea00c88a72c9388fed742fcd54814fc.jpg"
+              alt="Photo"
+            />
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="info">
+            <span class="role">UI/UX Designer</span>
+            <h3>Prabin Neupane</h3>
+            <p>
+              Crafts the visual landscape of our app, focusing on calming,
+              nature-inspired interfaces.
+            </p>
+          </div>
+          <div class="photo-box">
+            <img
+              src="https://i.pinimg.com/736x/3c/5c/d2/3c5cd29f391faed6e802c59fedfbf374.jpg"
+              alt="Photo"
+            />
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="info">
+            <span class="role">Frontend Developer</span>
+            <h3>Aayush Bhatta</h3>
+            <p>
+              Builds the responsive interface, ensuring a seamless experience
+              for travelers on all devices.
+            </p>
+          </div>
+          <div class="photo-box">
+            <img
+              src="https://i.pinimg.com/736x/43/b3/9d/43b39dde8f46c6cf88ee38561f42d9fc.jpg"
+              alt="Photo"
+            />
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="info">
+            <span class="role">Content Curator</span>
+            <h3>Abison Pandey</h3>
+            <p>
+              Researches and verifies destinations to ensure authentic and safe
+              travel recommendations.
+            </p>
+          </div>
+          <div class="photo-box">
+            <img
+              src="https://i.pinimg.com/736x/cd/34/7a/cd347a1a74e31572d49913e6a0d2f7b6.jpg"
+              alt="Photo"
+            />
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="info">
+            <span class="role">Database Analyst</span>
+            <h3>Jenish Baskota</h3>
+            <p>
+              Manages the backend data logistics, organizing complex route
+              information for trip planning.
+            </p>
+          </div>
+          <div class="photo-box">
+            <img
+              src="https://i.pinimg.com/736x/7d/32/7c/7d327c35679743ae101bd78c16250b98.jpg"
+              alt="Photo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="project-summary">
+        <h2>Project Overview</h2>
+        <p>
+          This initiative was developed as a college project focused on
+          revolutionizing how users interact with nature-based tourism. By
+          combining intuitive design with comprehensive destination data, our
+          team aims to bridge the gap between travelers and sustainable,
+          eco-friendly local adventures.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
 
