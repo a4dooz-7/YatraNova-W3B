@@ -1,1 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YatraNova | Digital Guide</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="img/logo.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left"><img src="./img/logo.png" alt="Logo" /></div>
+      <div class="nav-center">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./heritage.html">Destinations</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <i class="fa-solid fa-calendar-days" onclick="openMod('calMod')"></i>
+        <i class="fa-solid fa-bell" onclick="openMod('notifMod')"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </nav>
+
+    <div class="modal" id="calMod">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeMod('calMod')">&times;</span>
+        <h3 style="margin-bottom: 10px">English Calendar</h3>
+        <img src="img/calendar.webp" alt="calendar" />
+      </div>
+    </div>
+
+    <div class="modal" id="notifMod">
+      <div class="modal-content" style="text-align: left">
+        <span class="close-btn" onclick="closeMod('notifMod')">&times;</span>
+        <h3>Latest Updates</h3>
+        <p>• Image glitch fixed.</p>
+      </div>
+    </div>
+
+    <section class="hero">
+      <h1 class="company-name">
+        <span class="yatra">यात्रा</span><span class="nova">Nova</span>
+      </h1>
+
+      <p class="motto">
+        Bringing you closer to Nepal's heritage, nature, and hidden stories.
+      </p>
+      <button class="discover-btn" onclick="reveal()">Discover Nepal</button>
+    </section>
+
+    <main id="explore">
+      <h2
+        style="
+          font-family: &quot;Playfair Display&quot;, serif;
+          font-size: 2.5rem;
+          color: var(--brand-green);
+          margin-bottom: 20px;
+        "
+      >
+        Explore The Wonders
+      </h2>
+
+      <div class="grid-container">
+        <div class="spot-card">
+          <a href="natural.html" class="card-link">
+            <img src="img/nat.1.jpg" alt="Natural Places" />
+            <div class="card-overlay"><h3>Natural Places</h3></div>
+          </a>
+        </div>
+
+        <div class="spot-card">
+          <a href="cultural.html" class="card-link">
+            <img src="img/img10.jpg" alt="Cultural Places" />
+            <div class="card-overlay"><h3>Cultural Places</h3></div>
+          </a>
+        </div>
+
+        <div class="spot-card">
+          <a href="historical.html" class="card-link">
+            <img src="img/history2.jpg" alt="Historical Places" />
+            <div class="card-overlay"><h3>Historical Places</h3></div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-col">
+          <h4>यात्राNova</h4>
+          <p style="font-size: 0.85rem">
+            An informational guide providing basic descriptions and visual
+            archives of Nepal's finest tourist spots.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li>
+              <i class="fa-solid fa-mountain-sun"></i
+              ><a href="./natural.html">Natural Sites</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-om"></i
+              ><a href="/heritage.html">Cultural Heritage</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-monument"></i
+              ><a href="./historical.html">Historical Places</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i
+              ><a href="./confirmed.html">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-users"></i
+              ><a href="./aboutus.html">About Us</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-comments"></i
+              ><a href="./feedback.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col contact-info">
+          <h5>Contact Us</h5>
+          <p><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</p>
+          <p><i class="fa-solid fa-envelope"></i> info@yatranova.com</p>
+          <p><i class="fa-solid fa-phone"></i> +977-1-45463536</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 यात्राNova. Basic Information Portal. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
 
